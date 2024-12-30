@@ -1,0 +1,304 @@
+/* General */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #f8f8f8;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 15px 0;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 1.8rem;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ff9800;
+}
+
+.hero {
+    text-align: center;
+    padding: 50px;
+    background: url('comienzo.png') no-repeat center/cover;
+    color: #292121;
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1.2rem;
+}
+
+/* Products Section */
+.products {
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+.products h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+.product-item {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.product-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-item img {
+    max-width: 100%;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.product-item h3 {
+    font-size: 1rem;
+    margin: 10px 0;
+}
+
+.product-item p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.product-item button {
+    padding: 10px 15px;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.product-item button:hover {
+    background-color: #e68900;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+}
+
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact form label {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact form input,
+.contact form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.contact form input:focus,
+.contact form textarea:focus {
+    border-color: #ff9800;
+    outline: none;
+}
+
+.contact form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact form button:hover {
+    background-color: #e68900;
+}
+
+/* Cart Section */
+.cart {
+    padding: 20px;
+    background-color: #f7f7f7;
+}
+
+.cart h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#carrito-contenido {
+    max-width: 800px;
+    margin: auto;
+    background: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+}
+
+.cart-item p {
+    margin: 0;
+    font-size: 1rem;
+}
+
+.cart-item button {
+    background-color: #ff4d4d;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 0.9rem;
+}
+
+.cart-item button:hover {
+    background-color: #e33c3c;
+}
+
+#total-compra {
+    margin-top: 15px;
+    text-align: right;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* Reviews Section */
+.reviews {
+    padding: 20px;
+    background: #ececec;
+}
+
+.reviews h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.grid-reseñas {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.reseña {
+    background: #fff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.reseña p {
+    font-size: 1rem;
+    font-style: italic;
+    color: #666;
+}
+
+.reseña h4 {
+    margin-top: 10px;
+    text-align: right;
+    font-size: 0.9rem;
+    color: #333;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 10px;
+}
+
+footer .social {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+footer a:hover {
+    color: #ff9800;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .grid {
+        grid-template-columns: 1fr;
+    }
+
+    .grid-reseñas {
+        grid-template-columns: 1fr;
+    }
+
+    #carrito-contenido {
+        padding: 10px;
+    }
+}
